@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_medium"
+        android:layout_marginTop="@dimen/space_medium"
+        android:layout_marginRight="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/space_large"
+            android:paddingTop="@dimen/space_large">
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_topics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_category"
+                android:layout_toStartOf="@id/iv_category_arrow"
+                android:paddingBottom="@dimen/space_large"
+                android:text="03-23 11:02:02.239 2247-2258/trungatom.
+                tqt.second"
+                android:textColor="#B3FFFFFF" />
+
+            <ImageView
+                android:id="@+id/iv_category_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_topics"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/space_large"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
